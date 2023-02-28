@@ -1,5 +1,6 @@
 # Module Imports
 from flask import Flask, request, session, redirect, render_template, url_for
+from flask_cors import CORS
 import schedule
 import threading
 import time
@@ -15,7 +16,7 @@ from api import Api
 
 # App Setup
 app = Flask(__name__, static_folder="static")
-
+CORS(app)
 app.secret_key = app_sec
 # user & pass
 def_username = def_username
@@ -61,7 +62,7 @@ if __name__ == "__main__":
 
     
 
-    
+
     
 
 

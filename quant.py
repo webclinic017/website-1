@@ -5,6 +5,7 @@ from plotly.subplots import make_subplots
 import requests
 import math
 from tvDatafeed import TvDatafeed, Interval
+# from telegram_notifier  import TelegramNotifier
 from telegram_notifier import TelegramNotifier
 from pathlib import Path
 from scipy.signal import argrelextrema
